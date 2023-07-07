@@ -1,0 +1,158 @@
+// Compile "main.scss" as "css/main.css"
+
+/**
+ * Import Bootstrap sources
+ * https://getbootstrap.com/docs/5.2/customize/sass
+ */
+
+// @import "../node_modules/bootstrap/scss/bootstrap"; // Include all of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import '../node_modules/bootstrap/scss/functions';
+
+// 2. Include any default variable overrides here
+
+// Options
+$enable-caret: true;
+$enable-rounded: true;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: true;
+$enable-reduced-motion: true;
+$enable-smooth-scroll: true;
+$enable-grid-classes: true;
+$enable-button-pointers: true;
+$enable-rfs: true;
+$enable-validation-icons: true;
+$enable-negative-margins: false;
+$enable-deprecation-messages: true;
+$enable-important-utilities: true;
+
+$spacer: 1rem;
+
+// Grayscale vars
+$gray-100: #f1f1f1;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// Color vars
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
+
+// Fonts
+$font-family-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+$font-family-serif: Georgia, 'Times New Roman', Times, serif;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  'Liberation Mono', 'Courier New', monospace;
+$font-family-base: $font-family-sans-serif;
+
+$link-decoration: none;
+
+/**
+* Custom Mixins, functions y vars
+*/
+@import './scss/theme_functions';
+@import './scss/theme-vars';
+@import './scss/mixins';
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import '../node_modules/bootstrap/scss/variables';
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import '../node_modules/bootstrap/scss/maps';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/root';
+
+// 6. Optionally include any other parts as needed: Uncomment components to reduce the filesize
+@import '../node_modules/bootstrap/scss/utilities';
+@import '../node_modules/bootstrap/scss/reboot';
+@import '../node_modules/bootstrap/scss/type';
+@import '../node_modules/bootstrap/scss/images';
+@import '../node_modules/bootstrap/scss/containers';
+@import '../node_modules/bootstrap/scss/grid';
+@import '../node_modules/bootstrap/scss/tables';
+@import '../node_modules/bootstrap/scss/forms';
+@import '../node_modules/bootstrap/scss/buttons';
+@import '../node_modules/bootstrap/scss/transitions';
+@import '../node_modules/bootstrap/scss/dropdown';
+@import '../node_modules/bootstrap/scss/button-group';
+@import '../node_modules/bootstrap/scss/nav';
+@import '../node_modules/bootstrap/scss/navbar';
+// @import '../node_modules/bootstrap/scss/card';
+// @import '../node_modules/bootstrap/scss/accordion';
+// @import '../node_modules/bootstrap/scss/breadcrumb';
+// @import '../node_modules/bootstrap/scss/pagination';
+// @import '../node_modules/bootstrap/scss/badge';
+// @import '../node_modules/bootstrap/scss/alert';
+// @import '../node_modules/bootstrap/scss/progress';
+@import '../node_modules/bootstrap/scss/list-group';
+@import '../node_modules/bootstrap/scss/close';
+// @import '../node_modules/bootstrap/scss/toasts';
+@import '../node_modules/bootstrap/scss/modal';
+// @import '../node_modules/bootstrap/scss/tooltip';
+@import '../node_modules/bootstrap/scss/popover';
+// @import '../node_modules/bootstrap/scss/carousel';
+// @import '../node_modules/bootstrap/scss/spinners';
+@import '../node_modules/bootstrap/scss/offcanvas';
+@import '../node_modules/bootstrap/scss/helpers';
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import '../node_modules/bootstrap/scss/utilities/api';
+
+/**
+* Font Awesome
+* Importar solo los íconos necesarios
+*/
+@import './scss/font-awesome/fontawesome.scss';
+@import './scss/font-awesome/brands.scss';
+// @import './scss/font-awesome/solid.scss';
+// @import './scss/font-awesome/regular.scss';
+
+// import Swiper and modules styles
+@import '../node_modules/swiper/swiper.scss';
+@import '../node_modules/swiper/modules/navigation/navigation.scss';
+@import '../node_modules/swiper/modules/pagination/pagination.scss';
+/**
+* Wordpress Base
+*/
+@import './scss/fonts.scss';
+@import './scss/general';
+@import './scss/wordpress';
+@import './scss/header';
+@import './scss/footer';
+@import './scss/overlays';
+
+@import './scss/sections';
+@import './scss/article-items';
+@import './scss/carrusel-hero';
+@import './scss/section-suscripcion';
+@import './scss/scrolling-wrapper';
+@import './scss/section-instagram';
+@import './scss/archives';
+@import './scss/search';
+@import './scss/pages';
+@import './scss/single';
+@import './scss/widgets';
+@import './scss/category';
+@import './scss/glightbox';
+@import './scss/videos';
+
+@import './scss/maps';
+@import './scss/instagram-picks';

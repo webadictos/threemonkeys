@@ -1,0 +1,25 @@
+:root {
+  --tec-color-accent-primary: #000;
+}
+.tribe-events-schedule {
+  .tribe-events-schedule__datetime {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
+    @include media-breakpoint-up(lg) {
+      gap: 1rem;
+    }
+    br {
+      display: none;
+    }
+    p {
+      margin: 0;
+    }
+    .tribe-events-schedule__date {
+      @include media-breakpoint-down(sm) {
+        flex-basis: 100%;
+      }
+    }
+  }
+}

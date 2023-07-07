@@ -1,0 +1,74 @@
+.section-blog {
+  background-image: var(
+    --section-background-image,
+    url('../images/fondo-cronicas-whisky.jpg')
+  );
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-color: var(--page-background, 'transparent');
+  padding-top: var(--section-padding-top, 5rem);
+  padding-bottom: var(--section-padding-bottom, 5rem);
+
+  @include media-breakpoint-up(md) {
+    padding-top: var(
+      --section-padding-top-desktop,
+      calc(var(--sticky-header) + 5rem)
+    );
+    padding-bottom: var(
+      --section-padding-bottom-desktop,
+      calc(var(--sticky-header) + 5rem)
+    );
+  }
+  .section {
+    --section-background: transparent;
+  }
+
+  .section__title-container {
+    --color-section-headings: #{rgba(255, 255, 255, 0.36)};
+    --section-title-size: #{clamp(1.25rem, 3.4vw + 0.6rem, 3.125rem)};
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    @include media-breakpoint-up(md) {
+      width: 50%;
+    }
+    .section__title {
+      text-align: center;
+    }
+
+    .section__description {
+      width: 100%;
+      max-width: 100%;
+      font-size: 0.9rem;
+      margin: 2rem 0;
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.section-related {
+  .section__title-container {
+    --color-section-headings: #fff;
+    --section-title-size: clamp(1.25rem, 1.1vw + 1rem, 1.875rem);
+    width: 100%;
+    margin: 0;
+
+    .section__title {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: '';
+        border-top: 2px solid var(--bs-secondary);
+        margin: 0 rem(20px) 0 rem(-12px);
+        flex: 0 0 rem(57px);
+      }
+    }
+  }
+}
+
+.section-cocktails {
+  --section-background-image: none;
+}

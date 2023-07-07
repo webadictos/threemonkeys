@@ -1,0 +1,85 @@
+.bushmills-verification {
+  //   height: 100vh;
+
+  @extend .hamburguer-menu;
+
+  .bushmills-verification__logo {
+    margin-top: 3rem;
+  }
+
+  .bushmills-verification__legals {
+    margin-bottom: 3rem;
+    .nav-link {
+      --bs-nav-link-color: #fff;
+      --bs-nav-link-font-size: #{rem(10px)};
+    }
+  }
+  .bushmills-verification__form {
+    --form-label-size: clamp(2.5rem, 2.4vw + 2rem, 3.5rem);
+    max-width: rem(600px);
+    .bushmills-verification__form--title {
+      color: var(--bs-secondary);
+      text-align: center;
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+
+    .bushmills-verification__form--txt {
+      text-align: center;
+      color: #fff;
+      font-size: rem(12px);
+    }
+    label {
+      color: rgba(255, 255, 255, 0.29);
+      font-family: var(--font-family-headings);
+      font-weight: var(--font-family-headings-weight);
+      text-align: center;
+      font-size: var(--form-label-size);
+    }
+
+    .form-control {
+      border: 0;
+      border-bottom: rem(1px) solid rgba(255, 255, 255, 0.29);
+      background-color: transparent;
+      border-radius: 0;
+      color: #fff;
+      font-family: var(--font-family-headings);
+      font-size: var(--form-label-size);
+      font-weight: var(--font-family-headings-weight);
+      text-align: center;
+      &.invalid {
+        border-color: #dc3545;
+        color: #dc3545;
+      }
+      &:focus {
+        box-shadow: unset;
+      }
+
+      &[type='number']::-webkit-inner-spin-button,
+      &[type='number']::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+    .btn {
+      --bs-btn-color: var(--bs-secondary);
+      --bs-btn-bg: #fff;
+      --bs-btn-border-width: 0;
+      --bs-btn-border-color: transparent;
+      --bs-btn-border-radius: 0;
+      --bs-btn-hover-border-color: transparent;
+      --bs-btn-box-shadow: unset;
+      --bs-btn-focus-box-shadow: unset;
+      --bs-btn-font-family: var(--font-family-headings);
+      --bs-btn-font-weight: var(--font-family-headings-weight);
+      --bs-btn-hover-color: #fff;
+      --bs-btn-hover-bg: var(--bs-secondary);
+      --bs-btn-font-size: #{rem(20px)};
+      --bs-btn-padding-x: 2rem;
+      text-transform: uppercase;
+    }
+  }
+  .bushmills-verification__error {
+    @extend .bushmills-verification__form;
+  }
+}

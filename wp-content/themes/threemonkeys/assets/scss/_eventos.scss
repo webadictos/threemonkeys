@@ -1,0 +1,23 @@
+.section-events {
+  --section-title-size: clamp(1.625rem, 6.1vw + 0.4rem, 5rem);
+  --color-section-headings: #fff;
+
+  @include media-breakpoint-up(lg) {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em 1em;
+  }
+
+  .section__title-container {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .section-events__items {
+    grid-area: 1 / 3 / 3 / 6;
+
+    @include media-breakpoint-up(lg) {
+      grid-gap: 1rem 3rem;
+    }
+  }
+}

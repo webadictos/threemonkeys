@@ -1,0 +1,164 @@
+@use 'sass:meta';
+//Bootstrap Vars
+$primary: #000;
+$secondary: #191a1c;
+$tertiary: #f1f0ee;
+$borders-color: #221f20;
+$font-weight-base: 300;
+$body-bg: #f0efed; // #f1f0ee;
+$body-color: #000;
+$popover-bg: #000;
+$popover-body-color: #fff;
+$color-gray: #666;
+
+//Fonts Vars
+$font-family-base: 'Lato', sans-serif;
+$font-family-secondary: 'Merriweather', serif;
+$font-family-tertiary: 'Open Sans', sans-serif;
+
+$nav-font-family: 'Lato', sans-serif;
+$nav-font-weight: 400;
+
+$category-font-family: 'Lato', sans-serif;
+$category-font-weight: 400;
+
+$headings-font-family: 'Merriweather', serif;
+$headings-font-weight: 400;
+
+$section-title-font-family: 'Merriweather', serif;
+$section-title-font-weight: 400;
+$section-title-color: #000000;
+
+$article-item-title-font-family: 'Merriweather', serif;
+$article-item-title-font-weight: 400;
+
+$single-title-font-family: 'Merriweather', serif;
+$single-title-font-weight: 400;
+$single-title-color: #eeedeb;
+
+$entry-font-family: 'Lato', sans-serif;
+
+$excerpt-font-family: 'Lato', sans-serif;
+$excerpt-font-weight: 700;
+
+$ads-text-font-family: 'Open Sans', sans-serif;
+
+$fa-font-path: '../webfonts/fontawesome/';
+
+//Colors
+
+$headings-color: #000000;
+$excerpt-color: #091405;
+$entry-color: #000000;
+$background-nav: transparent;
+$color-nav: #091405;
+$footer-background: #191a1c;
+$footer-nav-color: #fff;
+$section-headings-color: #000000;
+
+$widgets-dark-color: #f0efed;
+$arrow-fill: #231f20;
+
+//CSS VARS
+
+:root {
+  //Generales
+
+  // --body-bg: #{$body-bg};
+  --nav-bg: #{$background-nav};
+  --nav-color: #{$color-nav};
+  --big-title-size: clamp(2rem, 3.7vw + 1.3rem, 4.5rem);
+  --big-title-size2: #{fluid(32px, 72px)};
+
+  --font-family-base: #{meta.inspect($font-family-base)};
+  --font-family-secondary: #{meta.inspect($font-family-secondary)};
+  --font-family-tertiary: #{meta.inspect($font-family-tertiary)};
+
+  //Por componente
+  --nav-font-family: #{meta.inspect($nav-font-family)};
+  --nav-font-weight: #{meta.inspect($nav-font-weight)};
+
+  --category-font-family: #{meta.inspect($category-font-family)};
+  --category-font-weight: #{$category-font-weight};
+  --headings-font-family: #{meta.inspect($headings-font-family)};
+  --headings-font-weight: #{$headings-font-weight};
+  --headings-color: #{$headings-color};
+
+  --section-title-font-family: #{meta.inspect($section-title-font-family)};
+  --section-title-font-weight: #{$section-title-font-weight};
+  --section-title-color: #{meta.inspect($section-title-color)};
+  --section-title-font-size: #{fluid(19px, 32px)};
+
+  --entry-font-family: #{meta.inspect($entry-font-family)};
+  --excerpt-font-family: #{meta.inspect($excerpt-font-family)};
+  --excerpt-font-weight: #{$excerpt-font-weight};
+  --article-item-title-font-family: #{meta.inspect(
+      $article-item-title-font-family
+    )};
+  --article-item-title-font-weight: #{$article-item-title-font-weight};
+
+  --single-title-font-family: #{meta.inspect($single-title-font-family)};
+  --single-title-font-weight: #{meta.inspect($single-title-font-weight)};
+  --single-title-color: #{meta.inspect($single-title-color)};
+
+  --page-title-font-size: #{fluid(16px, 26px)};
+  --single-title-font-size: #{fluid(16px, 30px)};
+  --excerpt-font-size: #{fluid(15px, 18px)};
+  --excerpt-color: #{$excerpt-color};
+  --entry-color: #{$entry-color};
+
+  --footer-nav-color: #{$footer-nav-color};
+  --footer-nav-font-size: #{fluid(10px, 12px)}; //clamp(0.8875rem, 0.7vw + 0.6rem, 1.0625rem);
+  --footer-background: #{$footer-background};
+  --footer-color: #fff;
+  --entry-font-size: #{fluid(15px, 17px)};
+  --article-item-title-font-size: clamp(1.25rem, 0.2vw + 1.2rem, 1.375rem);
+  --section-margin: 1rem 0;
+  --social-icons-font-size: 1rem;
+  --social-icons-justify-content: space-evenly;
+  --social-icons-gap: 1rem;
+  --sticky-header-margin: #{rem(85px)};
+  --wrapper-margin-top: #{rem(33.68px)};
+
+  --header-background: var(--bs-secondary);
+  --header-padding-x: 0;
+  --header-padding-y: 0.5rem;
+
+  --borders-color: #{meta.inspect($borders-color)};
+  --widgets-dark-color: #{meta.inspect($widgets-dark-color)};
+
+  //TODO: ELIMINAR variables que no se usan
+  --font-family-nav: #{meta.inspect($nav-font-family)};
+  --font-family-nav-weight: #{$nav-font-weight};
+  --font-family-category: #{meta.inspect($category-font-family)};
+  --font-family-category-weight: #{$category-font-weight};
+  --font-family-headings: #{meta.inspect($headings-font-family)};
+  --font-family-headings-weight: #{$headings-font-weight};
+  --color-headings: #{$headings-color};
+  --font-family-section-title: #{meta.inspect($section-title-font-family)};
+  --font-family-section-title-weight: #{$section-title-font-weight};
+  --color-section-headings: #{meta.inspect($section-headings-color)};
+  --font-family-text: #{meta.inspect($entry-font-family)};
+  --font-family-excerpt: #{meta.inspect($excerpt-font-family)};
+  --font-family-excerpt-weight: #{$excerpt-font-weight};
+  --font-family-article-title: #{meta.inspect($article-item-title-font-family)};
+  --font-family-article-title-weight: #{$article-item-title-font-weight};
+  --font-family-single-title: #{meta.inspect($single-title-font-family)};
+  --font-familiy-ads-text: #{meta.inspect($ads-text-font-family)};
+  --page-title-size: clamp(3rem, 9.4vw + 1.1rem, 7rem);
+  --article-title-size: clamp(1.625rem, 1.3vw + 1.4rem, 2.25rem);
+  --article-excerpt-size: clamp(1rem, 0.4vw + 0.9rem, 1.3rem);
+  --color-excerpt: #{$excerpt-color};
+  --color-entry-txt: #{$entry-color};
+  --footer-nav-color: #{$footer-nav-color};
+  --footer-nav-size: clamp(0.8875rem, 0.7vw + 0.6rem, 1.0625rem);
+  --footer-bg: #{$footer-background};
+  --section-title-size: #{rem(20px)}; //clamp(1.5625rem, 2.2vw + 1.1rem, 2.5rem);
+  --font-size-txt: 1rem;
+  --sections-margins: 1rem 0;
+  --background-article: transparent;
+  --sticky-header: #{rem(85px)};
+  --social-icons-fsize: 1rem;
+  --social-icons-justify: space-evenly;
+  --bs-tertiary: #{$tertiary};
+}

@@ -1,0 +1,21 @@
+.search-results {
+  --section-title-font-size: #{fluid(13px, 26px)};
+  --section-title-color: var(--bs-secondary);
+  --section-title-margin: 2rem 0;
+
+  .section__title {
+    text-transform: uppercase;
+    .search-keywords {
+      text-transform: none;
+    }
+  }
+
+  .archive-articles-container {
+    --archive-grid-cols-mobile: 2;
+    --archive-grid-gap: 0.5em;
+
+    @include media-breakpoint-up(lg) {
+      --archive-grid-gap: 2rem;
+    }
+  }
+}

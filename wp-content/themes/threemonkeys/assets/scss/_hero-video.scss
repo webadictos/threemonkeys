@@ -1,0 +1,109 @@
+.hero-header {
+  $hero-height: 100vh;
+  --video-container-position: fixed;
+  height: $hero-height;
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+  }
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    //      rgba(13, 58, 87, 1) 0%,
+    background-color: rgba(0, 0, 0, 0.8);
+    // background-color: rgb(0 0 0 / 50%);
+    // background: linear-gradient(
+    //   180deg,
+    //   rgba(0, 0, 0, 1) 0%,
+    //   rgba(255, 255, 255, 0) 50%
+    // );
+  }
+
+  .hero-header__img,
+  .brid {
+    width: 100% !important;
+    // position: absolute;
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    position: var(--video-container-position);
+    top: 0;
+    bottom: 0;
+    z-index: -999;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    figcaption {
+      left: 1%;
+      position: absolute;
+      bottom: 1%;
+      color: #fff;
+      z-index: 2;
+      font-weight: 100;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+    video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all 1s ease-in;
+      &.brid-animate {
+        opacity: 1;
+      }
+    }
+  }
+
+  .hero-header__container {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem 0;
+    .big-title {
+      max-width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      @include media-breakpoint-up(lg) {
+        max-width: 50%;
+      }
+    }
+    .btn {
+      --bs-btn-color: #fff;
+      --bs-btn-bg: transparent;
+      --bs-btn-border-color: var(--bs-secondary);
+      --bs-btn-border-radius: 0;
+      --bs-btn-border-width: 0.0625rem;
+      // --bs-btn-font-family: var(--font-family-nav);
+      --bs-btn-font-size: clamp(0.8625rem, 1.1vw + 0.3rem, 1.0625rem);
+      --bs-btn-hover-bg: var(--bs-secondary);
+      --bs-btn-hover-border-color: var(--bs-secondary);
+      --bs-btn-hover-color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      --bs-btn-padding-x: 2rem;
+      --bs-btn-padding-y: 0.5rem;
+    }
+  }
+}
+
+.sticky-active {
+  .hero-header {
+    --video-container-position: absolute;
+  }
+}

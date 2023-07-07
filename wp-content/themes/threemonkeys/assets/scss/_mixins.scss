@@ -1,0 +1,21 @@
+@mixin textoDegradado($color-from, $color-to, $angle) {
+  color: $color-to;
+  background: -webkit-linear-gradient($angle, $color-from, $color-to);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin fondoDegradado($color-from, $color-to, $angle) {
+  background: $color-to;
+  background: linear-gradient($angle, $color-from 0%, $color-to 100%);
+}
+
+@mixin fondoBicolor($color-from, $color-to, $angle, $percent) {
+  background: linear-gradient(
+    $angle,
+    $color-from 0%,
+    $color-from $percent,
+    $color-to $percent,
+    $color-to 100%
+  );
+}

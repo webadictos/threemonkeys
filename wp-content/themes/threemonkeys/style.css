@@ -1,0 +1,17 @@
+/*!
+Theme Name: foodandpleasure
+Theme URI: https://foodandpleasure.com
+Author: Daniel Medina
+Author URI: https://webadictos.com
+Description: 
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 6.2
+Requires PHP: 5.1
+License: GPL version 2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0
+Tags: custom-background, custom-colors, featured-images, flexible-header, microformats, post-formats, rtl-language-support, theme-options, translation-ready, accessibility-ready
+Text Domain: foodandpleasure-theme
+*/
+
+/* Don't overwrite this file. Compile "/assets/main.scss" to "/assets/dist/main.css" */

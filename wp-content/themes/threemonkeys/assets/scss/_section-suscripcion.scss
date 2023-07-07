@@ -1,0 +1,32 @@
+.section-suscripcion {
+  --section-background: var(--bs-secondary);
+  --section-title-color: var(--bs-tertiary);
+  --section-title-font-size: #{fluid(18px, 33px)};
+  --section-padding: #{rem(58px)} 0;
+  --section-margin: 0;
+  .form-control {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--bs-tertiary);
+    border-radius: 0;
+    color: #a5a7aa;
+    &:focus {
+      box-shadow: unset;
+    }
+  }
+  .btn-submit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-secondary);
+    --bs-btn-border-color: var(--bs-tertiary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--bs-secondary);
+    --bs-btn-hover-border-color: var(--bs-tertiary);
+    --bs-btn-focus-shadow-rgb: 38, 38, 38;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-secondary);
+    --bs-btn-active-border-color: var(--bs-tertiary);
+    --bs-btn-border-radius: 0;
+    --bs-btn-font-size: #{fluid(10px, 15px)};
+    text-transform: uppercase;
+  }
+}
