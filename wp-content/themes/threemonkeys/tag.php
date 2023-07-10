@@ -6,7 +6,7 @@
 
 get_header();
 ?>
-<main class="site-main tag-archive container" role="main">
+<main class="site-main tag-archive " role="main">
 	<?php
 
 	if (have_posts()) :
@@ -28,7 +28,7 @@ get_header();
 
 		</section>
 		<section class="section p-0">
-			<div class="archive-articles-container" data-loadmore-layout="grid" data-loadmore-item-layout="archive-item">
+			<div class="archive-articles-container container" data-loadmore-layout="grid" data-loadmore-item-layout="archive-item">
 				<div class="row"></div>
 				<?php
 				$_args = array(
@@ -36,11 +36,11 @@ get_header();
 					'items_config' => array(
 						'items_show_tags' => false,
 						'items_show_main_cat' => false,
-						'items_show_badge_cat' => true,
-						'items_show_date' => false,
-						'items_show_author' => true,
+						'items_show_badge_cat' => false,
+						'items_show_date' => true,
+						'items_show_author' => false,
 						'items_show_excerpt' => false,
-						'items_show_arrow' => true,
+						'items_show_arrow' => false,
 						'items_show_more_btn' => false,
 					),
 				);

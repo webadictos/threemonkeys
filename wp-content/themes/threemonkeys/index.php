@@ -33,10 +33,10 @@ $page_id = get_option('page_for_posts');
 				'items_show_tags' => false,
 				'items_show_main_cat' => false,
 				'items_show_badge_cat' => false,
-				'items_show_date' => false,
-				'items_show_author' => true,
+				'items_show_date' => true,
+				'items_show_author' => false,
 				'items_show_excerpt' => false,
-				'items_show_arrow' => true,
+				'items_show_arrow' => false,
 				'items_show_more_btn' => false,
 			),
 		);

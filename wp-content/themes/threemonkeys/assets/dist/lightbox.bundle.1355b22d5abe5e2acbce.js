@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["lightbox"],{"./js/lightbox.js":function(o,s,t){t.r(s);s=t("../node_modules/glightbox/dist/js/glightbox.min.js");t.n(s)()({selector:".glightbox",touchNavigation:!0,loop:!0,autoplayVideos:!0})}}]);

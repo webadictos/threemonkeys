@@ -5,32 +5,57 @@
 }
 .wp-block-image {
   margin-bottom: 1.5rem;
-  position: relative;
-  display: inline-block;
-  figcaption {
-    text-align: center;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background: rgb(0 0 0/37%);
-    color: #fff;
-    padding: 0.3rem 1rem;
-    text-transform: uppercase;
-    font-size: 0.55rem;
-    margin: 0;
+  // position: relative;
+  // display: inline-block;
+  figure {
+    position: relative;
+    width: auto;
+    figcaption {
+      text-align: center;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background: rgb(0 0 0/37%);
+      color: #fff;
+      padding: 0.3rem 1rem;
+      text-transform: uppercase;
+      font-size: 0.55rem;
+      margin: 0;
+    }
   }
-  &.size-large,
-  &.size-full,
-  &.alignfull,
-  .size-large,
-  .size-full,
-  .alignfull {
-    width: 100%;
-    img {
-      width: 100%;
+
+  // &.size-large,
+  // &.size-full,
+  // &.alignfull,
+  // .size-large,
+  // .size-full,
+  // .alignfull {
+  //   width: 100%;
+  //   img {
+  //     width: 100%;
+  //   }
+  // }
+}
+
+figure {
+  &.wp-block-image {
+    position: relative;
+    width: auto;
+    figcaption {
+      text-align: center;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background: rgb(0 0 0/37%);
+      color: #fff;
+      padding: 0.3rem 1rem;
+      text-transform: uppercase;
+      font-size: 0.55rem;
+      margin: 0;
     }
   }
 }
+
 .aligncenter,
 div.aligncenter {
   display: block;

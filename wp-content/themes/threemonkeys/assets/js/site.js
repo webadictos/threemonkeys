@@ -111,7 +111,7 @@ const Site = (() => {
     //   './jquery-functions'
     // );
 
-    if (ThemeSetup.ads.enabled) {
+    if (WA_ThemeSetup?.ads?.enabled) {
       fileLoader
         .js('https://securepubads.g.doubleclick.net/tag/js/gpt.js', 'gpt-js')
         .then(script => {

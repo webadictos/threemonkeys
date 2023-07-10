@@ -543,9 +543,6 @@ if (function_exists('register_nav_menus')) {
 	register_nav_menus(
 		array(
 			'main-menu'   => 'Main Navigation Menu',
-			'main-menu-left'   => 'Main Navigation Left',
-			'main-menu-right'   => 'Main Navigation Right',
-			'hamburger-menu'   => 'Hamburger Navigation Menu',
 			'footer-menu' => 'Footer Menu',
 			'privacy-menu' => 'Privacy Menu',
 		)

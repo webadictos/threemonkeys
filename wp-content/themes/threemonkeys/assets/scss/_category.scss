@@ -1,6 +1,19 @@
 .category-archive {
+  --section-margin: 0;
+  background-image: url('../images/bg-dark.jpg');
+  background-size: cover;
+  --borders-color: #fff;
+  --section-title-color: #fff;
+  --bs-link-color: #fff;
+  background-repeat: round;
+  padding-bottom: 2rem;
+  @include media-breakpoint-up(lg) {
+    background-attachment: fixed;
+  }
+
   .category-archive__header {
-    margin: var(--category-archive-header-margin, rem(35px) 0 2rem);
+    margin: 0;
+    padding: 2rem 0;
     // border-top: var(
     //   --category-archive-header-border-top,
     //   rem(1px) solid var(--borders-color)
@@ -12,6 +25,7 @@
 
     .category-archive__title {
       --bordered-title-font-size: #{fluid(14px, 26px)};
+      margin: 0;
 
       //   padding: var(--category-archive-title-padding, rem(21px) 0);
       //   text-align: var(--category-archive-title-text-align, center);

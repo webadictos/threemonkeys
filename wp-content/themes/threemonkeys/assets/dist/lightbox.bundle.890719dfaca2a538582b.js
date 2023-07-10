@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcoolspot_theme=self.webpackChunkcoolspot_theme||[]).push([["lightbox"],{"./js/lightbox.js":function(o,t,s){s.r(t);t=s("../node_modules/glightbox/dist/js/glightbox.min.js");s.n(t)()({selector:".glightbox",touchNavigation:!0,loop:!0,autoplayVideos:!0})}}]);

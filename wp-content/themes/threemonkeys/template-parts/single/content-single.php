@@ -35,9 +35,9 @@ $primary_category = apply_filters('get_primary_category', $primary_category, get
 
             <div class="entry-meta single-entry__header-meta">
 
-                <div class="article-autor single-entry__header-meta--author" itemprop="author" itemscope itemtype="http://schema.org/Person"><?php echo __('Por', 'guia-gastronomica'); ?> <span itemprop="name">
+                <!-- <div class="article-autor single-entry__header-meta--author" itemprop="author" itemscope itemtype="http://schema.org/Person"><?php echo __('Por', 'guia-gastronomica'); ?> <span itemprop="name">
                         <?php the_author_posts_link(); ?></span>
-                </div>
+                </div> -->
 
                 <time class="post-meta-date single-entry__header-meta--date" itemprop="datePublished" content="<?php the_date('Y-m-d'); ?>"><?php the_time(get_option('date_format')); ?></time>
 

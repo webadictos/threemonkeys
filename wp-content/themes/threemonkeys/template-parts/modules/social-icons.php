@@ -1,3 +1,3 @@
-<div class="footer__social-icons d-flex justify-content-center">
-    <?php my_social_media_icons(false, false, false); ?>
+<div class="wa-social-icons">
+    <?php wa_show_social_profiles(); ?>
 </div>

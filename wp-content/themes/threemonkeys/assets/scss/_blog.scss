@@ -1,0 +1,24 @@
+.page-blog,
+.tag-archive,
+.search-results {
+  --section-margin: 0;
+  background-image: url('../images/bg-orange.jpg');
+  background-size: cover;
+  --borders-color: #fff;
+  --section-title-color: #fff;
+  --bs-link-color: #fff;
+  background-repeat: round;
+  padding-bottom: 2rem;
+  @include media-breakpoint-up(lg) {
+    background-attachment: fixed;
+  }
+  .section__title-container {
+    padding: 2rem 0;
+  }
+  .page-blog__header {
+    padding: 2rem 0;
+    .page-blog__title {
+      margin: 0;
+    }
+  }
+}

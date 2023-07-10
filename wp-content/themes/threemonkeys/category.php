@@ -29,7 +29,7 @@ get_header();
 		</header>
 
 
-		<section class="archive-articles-container category-archive__items container" data-loadmore-layout="grid" data-loadmore-item-layout="archive-item">
+		<section class="archive-articles-container container" data-loadmore-layout="grid" data-loadmore-item-layout="archive-item">
 			<div class="row"></div>
 			<?php
 			$_args = array(
@@ -37,15 +37,15 @@ get_header();
 				'items_config' => array(
 					'items_show_tags' => false,
 					'items_show_main_cat' => false,
-					'items_show_badge_cat' => true,
-					'items_show_date' => false,
-					'items_show_author' => true,
+					'items_show_badge_cat' => false,
+					'items_show_date' => true,
+					'items_show_author' => false,
 					'items_show_excerpt' => false,
-					'items_show_arrow' => true,
+					'items_show_arrow' => false,
 					'items_show_more_btn' => false,
 				),
 			);
-			get_template_part('template-parts/category/category', 'loop', $_args);
+			get_template_part('template-parts/archive', 'loop', $_args);
 			?>
 		</section>
 	<?php

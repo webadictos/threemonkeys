@@ -209,6 +209,19 @@ img {
   );
 }
 
+div.wa-social-icons {
+  --social-icons-font-size: 1.4rem;
+  @include media-breakpoint-up(lg) {
+    position: fixed;
+    left: 1%;
+    z-index: 1023;
+    top: 50%;
+    .wa-social-profiles {
+      flex-direction: column;
+    }
+  }
+}
+
 //Incrementamos font-size en pantallas grandes
 @media (min-width: 2000px) {
   html {

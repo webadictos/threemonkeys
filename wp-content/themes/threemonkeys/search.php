@@ -29,15 +29,15 @@ get_header();
 					<div class="row"></div>
 					<?php
 					$_args = array(
-						'items_layout_css' => 'article-item archive-item',
+						'items_layout_css' => 'archive-item',
 						'items_config' => array(
 							'items_show_tags' => false,
 							'items_show_main_cat' => false,
-							'items_show_badge_cat' => true,
-							'items_show_date' => false,
-							'items_show_author' => true,
+							'items_show_badge_cat' => false,
+							'items_show_date' => true,
+							'items_show_author' => false,
 							'items_show_excerpt' => false,
-							'items_show_arrow' => true,
+							'items_show_arrow' => false,
 							'items_show_more_btn' => false,
 						),
 					);

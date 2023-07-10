@@ -24,7 +24,7 @@ $GLOBALS['theme_modules'] = array(
         ),
     ),
     'ads' => array(
-        'active' => true,
+        'active' => false,
         'config' => array(),
     ),
     'social' => array(
@@ -48,11 +48,11 @@ $GLOBALS['theme_modules'] = array(
         ),
     ),
     'video-channel' => array(
-        'active' => true,
+        'active' => false,
         'config' => array(),
     ),
     'maps' => array(
-        'active' => true,
+        'active' => false,
         'config' => array(),
     ),
 );

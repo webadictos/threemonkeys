@@ -12,9 +12,9 @@ $page_id = get_option('page_for_posts');
 
 ?>
 
-<main class="site-main single-main container" role="main">
+<main class="site-main single-main" role="main">
 
-	<section class="articles-container">
+	<section class="articles-container container">
 
 
 		<?php

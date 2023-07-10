@@ -42,10 +42,3 @@
     grid-column: 1/-1;
   }
 }
-
-.category-map__items {
-  --archive-grid-cols: 3;
-  @include media-breakpoint-up(lg) {
-    --archive-grid-cols: 9;
-  }
-}
