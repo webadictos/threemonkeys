@@ -54,7 +54,7 @@ $logo_dark = wa_theme()->setting('general', 'logo_dark') ?? '';
                             // Loading WordPress Custom Menu (theme_location).
                             wp_nav_menu(
                                 array(
-                                    'menu_class'     => 'col-12 navbar-nav order-md-2 justify-content-md-center justify-content-lg-center',
+                                    'menu_class'     => 'col-12 col-md-11 navbar-nav justify-content-md-center justify-content-lg-center',
                                     'container'      => '',
                                     'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
                                     'walker'         => new WP_Bootstrap_Navwalker(),
@@ -62,6 +62,18 @@ $logo_dark = wa_theme()->setting('general', 'logo_dark') ?? '';
                                 )
                             );
                             ?>
+
+                            <div class="header__icon col-12 col-md-auto">
+
+                                <button type="button" data-bs-toggle="collapse" data-bs-target="#collapse-search" aria-expanded="false" aria-controls="collapse-search" title="<?php echo __('Search', 'wa-theme'); ?>" class="btn search-toggler">
+
+                                    <svg class="search-icon" fill="#FFF" width="17" height="17" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd" />
+                                    </svg>
+
+                                </button>
+
+                            </div>
 
                         </div><!-- /.navbar-collapse -->
 
@@ -87,13 +99,13 @@ $logo_dark = wa_theme()->setting('general', 'logo_dark') ?? '';
 
     </div>
 
-    <!-- <div class="collapse collapse-search container-fluid" id="collapse-search">
+    <div class="collapse collapse-search container-fluid" id="collapse-search">
         <div class="collapse-search__container">
             <form id="collapse-search__form" class="collapse-search__form" action="/" accept-charset="utf-8">
-                <input id="search" name="s" value="" class="form-control" type="search" data-swplive="true" dir="ltr" spellcheck="false" autocorrect="off" autocomplete="off" autocapitalize="off" maxlength="2048" tabindex="0" placeholder="BUSCAR: Los mejores..." aria-label="Escribe lo que deseas buscar" aria-describedby="search-form-icon">
+                <input id="search" name="s" value="" class="form-control" type="search" data-swplive="true" dir="ltr" spellcheck="false" autocorrect="off" autocomplete="off" autocapitalize="off" maxlength="2048" tabindex="0" placeholder="Escribe lo que deseas buscar..." aria-label="Escribe lo que deseas buscar" aria-describedby="search-form-icon">
                 <a class="collapse-search__close" href="#" data-bs-toggle="collapse" data-bs-target="#collapse-search.show">Cerrar</a>
             </form>
         </div>
-    </div> -->
+    </div>
 
 </header>
