@@ -180,14 +180,29 @@
   .entry-main-text {
     --bs-link-color: var(--entry-color);
     --bs-link-hover-color: currentColor;
+    --single-entry-max-width: 90%;
+
     color: var(--entry-color);
     font-weight: 400;
     font-size: var(--entry-font-size);
     padding-bottom: 1rem;
 
+    @include media-breakpoint-up(lg) {
+      --single-entry-max-width: #{rem(800px)};
+    }
+
+    > *:not(.wp-block-image) {
+      max-width: var(--single-entry-max-width);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     :where(h2, h3, h4, h5) {
       margin: 1.5rem 0;
       font-weight: 600;
+      max-width: var(--single-entry-max-width);
+      margin-left: auto;
+      margin-right: auto;
     }
 
     h2 {
@@ -215,15 +230,15 @@
       text-align: right;
       overflow-wrap: anywhere;
     }
+    .wp-block-embed {
+      text-align: center;
+    }
     p {
       line-height: 1.375em;
       text-align: left;
-      max-width: 90%;
+      max-width: var(--single-entry-max-width);
       margin-left: auto;
       margin-right: auto;
-      @include media-breakpoint-up(lg) {
-        max-width: 75ch;
-      }
     }
     a {
       text-decoration: underline;

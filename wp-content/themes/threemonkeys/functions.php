@@ -75,6 +75,15 @@ if (!function_exists('foodandpleasure_theme_setup_theme')) {
 	remove_action('enqueue_block_editor_assets', 'gutenberg_enqueue_block_editor_assets_block_directory');
 }
 
+
+
+function change_default_gutenberg_image_block_options()
+{
+	$block_type = WP_Block_Type_Registry::get_instance()->get_registered("core/image");
+	$block_type->attributes['align']['default'] = 'center';
+}
+add_action('init', 'change_default_gutenberg_image_block_options');
+
 if (!function_exists('wp_body_open')) {
 	/**
 	 * Fire the wp_body_open action.
